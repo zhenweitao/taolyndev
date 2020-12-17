@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="taolyn-api" />
+        <module name="taolyn-common" />
+        <module name="taolyn-mapper" />
+        <module name="taolyn-pojo" />
+        <module name="taolyn-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="taolyn-api" target="1.8" />
+      <module name="taolyn-common" target="1.8" />
+      <module name="taolyn-mapper" target="1.8" />
+      <module name="taolyn-pojo" target="1.8" />
+      <module name="taolyn-service" target="1.8" />
+      <module name="taolyndev" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
