@@ -5,6 +5,7 @@ import com.taolyn.enums.YesOrNo;
 import com.taolyn.pojo.Carousel;
 import com.taolyn.pojo.Category;
 import com.taolyn.pojo.vo.CategoryVO;
+import com.taolyn.pojo.vo.NewItemsVO;
 import com.taolyn.service.CarouselService;
 import com.taolyn.service.CategoryService;
 import com.taolyn.utils.IMOOCJSONResult;
@@ -67,7 +68,7 @@ public class IndexController {
         return IMOOCJSONResult.ok(list);
     }
 
- /*   @ApiOperation(value = "查询每个一级分类下的最新6条商品数据", notes = "查询每个一级分类下的最新6条商品数据", httpMethod = "GET")
+    @ApiOperation(value = "查询每个一级分类下的最新6条商品数据", notes = "查询每个一级分类下的最新6条商品数据", httpMethod = "GET")
     @GetMapping("/sixNewItems/{rootCatId}")
     public IMOOCJSONResult sixNewItems(
             @ApiParam(name = "rootCatId", value = "一级分类id", required = true)
@@ -79,5 +80,5 @@ public class IndexController {
 
         List<NewItemsVO> list = categoryService.getSixNewItemsLazy(rootCatId);
         return IMOOCJSONResult.ok(list);
-    }*/
+    }
 }

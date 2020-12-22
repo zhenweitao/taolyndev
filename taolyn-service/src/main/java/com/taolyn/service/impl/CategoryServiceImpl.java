@@ -5,6 +5,7 @@ import com.taolyn.mapper.CategoryMapper;
 import com.taolyn.mapper.CategoryMapperCustom;
 import com.taolyn.pojo.Category;
 import com.taolyn.pojo.vo.CategoryVO;
+import com.taolyn.pojo.vo.NewItemsVO;
 import com.taolyn.service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -44,7 +45,7 @@ public class CategoryServiceImpl implements CategoryService {
         return categoryMapperCustom.getSubCatList(rootCatId);
     }
 
-   /* @Transactional(propagation = Propagation.SUPPORTS)
+    @Transactional(propagation = Propagation.SUPPORTS)
     @Override
     public List<NewItemsVO> getSixNewItemsLazy(Integer rootCatId) {
 
@@ -52,5 +53,5 @@ public class CategoryServiceImpl implements CategoryService {
         map.put("rootCatId", rootCatId);
 
         return categoryMapperCustom.getSixNewItemsLazy(map);
-    }*/
+    }
 }

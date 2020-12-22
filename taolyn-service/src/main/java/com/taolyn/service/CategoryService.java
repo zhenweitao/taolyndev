@@ -3,6 +3,7 @@ package com.taolyn.service;
 
 import com.taolyn.pojo.Category;
 import com.taolyn.pojo.vo.CategoryVO;
+import com.taolyn.pojo.vo.NewItemsVO;
 
 import java.util.List;
 
@@ -26,6 +27,6 @@ public interface CategoryService {
      * @param rootCatId
      * @return
      */
-   /* public List<NewItemsVO> getSixNewItemsLazy(Integer rootCatId);*/
+    public List<NewItemsVO> getSixNewItemsLazy(Integer rootCatId);
 
 }
