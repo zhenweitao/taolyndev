@@ -8,6 +8,7 @@ import com.taolyn.pojo.ItemsParam;
 import com.taolyn.pojo.ItemsSpec;
 import com.taolyn.pojo.vo.CommentLevelCountsVO;
 import com.taolyn.pojo.vo.ItemInfoVO;
+import com.taolyn.pojo.vo.ShopcartVO;
 import com.taolyn.service.ItemService;
 import com.taolyn.utils.IMOOCJSONResult;
 import com.taolyn.utils.PagedGridResult;
@@ -166,7 +167,7 @@ public class ItemController extends BaseController {
 
         return IMOOCJSONResult.ok(grid);
     }
-/*
+
     // 用于用户长时间未登录网站，刷新购物车中的数据（主要是商品价格），类似京东淘宝
     @ApiOperation(value = "根据商品规格ids查找最新的商品数据", notes = "根据商品规格ids查找最新的商品数据", httpMethod = "GET")
     @GetMapping("/refresh")
@@ -181,6 +182,6 @@ public class ItemController extends BaseController {
         List<ShopcartVO> list = itemService.queryItemsBySpecIds(itemSpecIds);
 
         return IMOOCJSONResult.ok(list);
-    }*/
+    }
 
 }
